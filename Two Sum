@@ -1,9 +1,9 @@
 class Solution {
 
         fun twoSum(nums: IntArray, target: Int): IntArray {
+        
         var firstNumber = 0
         var secondNumber = 0
-
         var firstPostion = 0
         var secondPosition = 0
 
