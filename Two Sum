@@ -1,0 +1,25 @@
+class Solution {
+
+        fun twoSum(nums: IntArray, target: Int): IntArray {
+        var firstNumber = 0
+        var secondNumber = 0
+
+        var firstPostion = 0
+        var secondPosition = 0
+
+        for (i in 0 until nums.size - 1) {
+            firstPostion = i
+            firstNumber = nums[i]
+
+            for (j in i + 1 until nums.size) {
+                secondPosition = j
+                secondNumber = nums[j]
+                if ((firstNumber + secondNumber) == target) {
+                    return intArrayOf(firstPostion, secondPosition)
+                }
+            }
+        }
+
+        return intArrayOf(firstPostion, secondPosition)
+    }
+}
